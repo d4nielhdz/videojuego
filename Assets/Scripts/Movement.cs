@@ -42,7 +42,6 @@ public class Movement : MonoBehaviour {
         // }
         float yPos = transform.position.y;
         float translation = Input.GetAxis ("Vertical");
-        Debug.Log (translation);
         float lowerLimit = 4.07f;
         float upperLimit = 9.90f;
 
