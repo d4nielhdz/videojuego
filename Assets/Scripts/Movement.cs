@@ -2,23 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
-{
+public class Movement : MonoBehaviour {
     [SerializeField]
     private float speed = 0.0005f;
-    private void Awake()
-    {
+    private void Awake () {
 
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Script Arreglado");
+    void Start () {
+        Debug.Log ("Script Arreglado");
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update () {
         // // Al presionar W quiero incrementar Y
         // if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         // {
@@ -44,9 +40,19 @@ public class Movement : MonoBehaviour
         //     transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime);
 
         // }
+        float yPos = transform.position.y;
+        float translation = Input.GetAxis ("Vertical");
+        Debug.Log (translation);
+        float lowerLimit = 4.07f;
+        float upperLimit = 9.90f;
 
-        transform.Translate(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+        if (yPos <= upperLimit && yPos >= lowerLimit) {
+            transform.Translate (new Vector2 (0, translation));
+        } else if (yPos >= upperLimit && Input.GetKey(KeyCode.DownArrow)) {
+            transform.Translate (new Vector2 (0, translation));
+        } else if (yPos <= lowerLimit && Input.GetKey(KeyCode.UpArrow)) {
+            transform.Translate (new Vector2 (0, translation));
+        }
     }
-
 
 }
