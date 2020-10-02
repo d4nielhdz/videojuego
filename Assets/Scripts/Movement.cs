@@ -5,12 +5,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
     [SerializeField]
     private float speed = 0.0005f;
+    public AudioSource audioData;
     private void Awake () {
 
     }
     // Start is called before the first frame update
     void Start () {
-        Debug.Log ("Script Arreglado");
+        // audioData = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -45,11 +46,15 @@ public class Movement : MonoBehaviour {
         float lowerLimit = 4.07f;
         float upperLimit = 9.90f;
 
+        if (Input.GetKey(KeyCode.Space)) {
+            audioData.Play(0);
+        }
+
         if (yPos <= upperLimit && yPos >= lowerLimit) {
             transform.Translate (new Vector2 (0, translation));
-        } else if (yPos >= upperLimit && Input.GetKey(KeyCode.DownArrow)) {
+        } else if (yPos >= upperLimit && Input.GetKey (KeyCode.DownArrow)) {
             transform.Translate (new Vector2 (0, translation));
-        } else if (yPos <= lowerLimit && Input.GetKey(KeyCode.UpArrow)) {
+        } else if (yPos <= lowerLimit && Input.GetKey (KeyCode.UpArrow)) {
             transform.Translate (new Vector2 (0, translation));
         }
     }
