@@ -19,7 +19,15 @@ public class ScrollBg : MonoBehaviour {
             myTime += 0.1f;
             Vector2 offset = new Vector2 (myTime * horizontal * speed, 0);
             GetComponent<Renderer> ().material.mainTextureOffset = offset;
-        } else {
+        }
+        //  else if (Input.GetKey (KeyCode.LeftArrow)) {
+        //     isMoving = true;
+        //     myTime += 0.1f;
+        //     Vector2 offset = new Vector2 (myTime * horizontal * speed * -1, 0);
+        //     GetComponent<Renderer> ().material.mainTextureOffset = offset;
+
+        // } 
+        else {
             isMoving = false;
         }
     }
