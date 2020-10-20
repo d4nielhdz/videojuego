@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 1807508134}
   - component: {fileID: 1807508133}
   m_Layer: 0
-  m_Name: Gunner_Black_Run_0
+  m_Name: Gunner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
