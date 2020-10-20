@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour {
     public GameObject enemy;
-    public int xPos, yPos, enemyCount;
+    public int xPos, yPos;
 
     // Start is called before the first frame update
     void Start () {
-        enemyCount = 0;
         StartCoroutine (ZombieSpawn ());
     }
 
     IEnumerator ZombieSpawn () {
 
         while (true) {
-            if (enemyCount < 10) {
-                xPos = Random.Range (-6, 2);
-                yPos = Random.Range (-6, 2);
+            xPos = Random.Range (15, 24);
+            yPos = Random.Range (4, 10);
 
-                Instantiate (enemy, new Vector3 (xPos, yPos, 0), Quaternion.identity);
+            Instantiate (enemy, new Vector3 (xPos, yPos, 0), Quaternion.identity);
 
-                enemyCount++;
-            }
+            yield return new WaitForSeconds (1);
         }
 
-        yield return new WaitForSeconds (1);
     }
 
     // Update is called once per frame
