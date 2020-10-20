@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 2083098946783186418
-    second: Gunner_Black_Run_0
+    second: Gunner2
   - first:
       213: 805145331458626231
     second: Gunner_Black_Run_1
@@ -29,6 +29,33 @@ TextureImporter:
   - first:
       213: -8917975323743084084
     second: Gunner_Black_Run_8
+  - first:
+      213: 4603363949561715081
+    second: GunnerRun
+  - first:
+      213: 4569090196290390767
+    second: Gunner_Black_Run_1
+  - first:
+      213: -8242192223499825323
+    second: Gunner_Black_Run_2
+  - first:
+      213: -4983198495355788326
+    second: Gunner_Black_Run_3
+  - first:
+      213: -1480784834044572221
+    second: Gunner_Black_Run_4
+  - first:
+      213: 7517588734489155015
+    second: Gunner_Black_Run_5
+  - first:
+      213: 382558574610425357
+    second: Gunner_Black_Run_6
+  - first:
+      213: -6290549060927842089
+    second: Gunner_Black_Run_7
+  - first:
+      213: 2083098946783186418
+    second: BlackGunnerRun
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,43 +141,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gunner_Black_Run_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 9
-        width: 38
-        height: 34
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fd80039477a8ec10800000000000000
-      internalID: 2083098946783186418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Gunner_Black_Run_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 10
-        width: 39
-        height: 35
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b2d722c9637c2b00800000000000000
-      internalID: 805145331458626231
+      spriteID: feacb90535ba86f30800000000000000
+      internalID: 4569090196290390767
       vertices: []
       indices: 
       edges: []
@@ -159,19 +165,19 @@ TextureImporter:
       name: Gunner_Black_Run_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 10
-        width: 8
-        height: 4
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78cd84c805a528f90800000000000000
-      internalID: -6952895572709155705
+      spriteID: 55f4ecb77d9dd9d80800000000000000
+      internalID: -8242192223499825323
       vertices: []
       indices: 
       edges: []
@@ -180,19 +186,19 @@ TextureImporter:
       name: Gunner_Black_Run_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 9
-        width: 28
-        height: 34
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f76d402eecf8c5c0800000000000000
-      internalID: -4194824953221257226
+      spriteID: ad3ae0fde5f18dab0800000000000000
+      internalID: -4983198495355788326
       vertices: []
       indices: 
       edges: []
@@ -201,19 +207,19 @@ TextureImporter:
       name: Gunner_Black_Run_4
       rect:
         serializedVersion: 2
-        x: 144
-        y: 10
-        width: 40
-        height: 34
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f256071d5f421d000800000000000000
-      internalID: 58868908331918639
+      spriteID: 3cdccf9f902337be0800000000000000
+      internalID: -1480784834044572221
       vertices: []
       indices: 
       edges: []
@@ -222,61 +228,40 @@ TextureImporter:
       name: Gunner_Black_Run_5
       rect:
         serializedVersion: 2
-        x: 193
-        y: 11
-        width: 39
-        height: 34
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e61b5a63db46a7690800000000000000
-      internalID: -7603654257033236114
+      spriteID: 7c554b6cf17d35860800000000000000
+      internalID: 7517588734489155015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gunner_Black_Run_6
+      name: BlackGunnerRun
       rect:
         serializedVersion: 2
-        x: 243
-        y: 10
-        width: 8
-        height: 4
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7612a22c13bc7b8e0800000000000000
-      internalID: -1677648921600843417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gunner_Black_Run_7
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 9
-        width: 28
-        height: 34
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5983cf931fa3b7140800000000000000
-      internalID: 4718429842335086741
+      spriteID: 2fd80039477a8ec10800000000000000
+      internalID: 2083098946783186418
       vertices: []
       indices: 
       edges: []
