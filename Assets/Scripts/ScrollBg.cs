@@ -21,7 +21,7 @@ public class ScrollBg : MonoBehaviour {
         if (Input.GetKey (KeyCode.RightArrow)) {
             isMoving = true;
             playerAnim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController> ("BlackGunnerRun");
-            myTime += 0.1f;
+            myTime += 0.01f;
             Vector2 offset = new Vector2 (myTime * horizontal * speed, 0);
             GetComponent<Renderer> ().material.mainTextureOffset = offset;
         } else if (Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.UpArrow)) {

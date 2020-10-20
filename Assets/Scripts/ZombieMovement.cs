@@ -15,7 +15,7 @@
          ScrollBg scrollScript = Background.GetComponent<ScrollBg> ();
          pos = GetComponent<Transform>().position;
          if (scrollScript.isMoving) {
-            GetComponent<Rigidbody2D> ().transform.Translate (-scrollScript.speed, 0, 0);
+            GetComponent<Rigidbody2D> ().transform.Translate (-0.1f, 0, 0);
          }
          if (pos.x < 5.3f) {
              Destroy(gameObject);
