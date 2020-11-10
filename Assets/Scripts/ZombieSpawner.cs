@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour {
-    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+    private GameObject toIn;
+    private int en;
     public int xPos, yPos;
 
     // Start is called before the first frame update
@@ -17,7 +21,10 @@ public class ZombieSpawner : MonoBehaviour {
             xPos = Random.Range (20, 24);
             yPos = Random.Range (4, 10);
 
-            Instantiate (enemy, new Vector3 (xPos, yPos, 0), Quaternion.identity);
+            en = Random.Range(0, 3);
+            toIn = en < 1 ? enemy1 : (en < 2 ? enemy2 : enemy3);
+            Debug.Log(en);
+            Instantiate (toIn, new Vector3 (xPos, yPos, 0), Quaternion.identity);
 
             yield return new WaitForSeconds (1);
         }

@@ -21,7 +21,6 @@ public class BulletController : MonoBehaviour {
     }
 
     void OnTriggerEnter2D (Collider2D other) {
-        Debug.Log ("collision");
         if (other.tag == "Zombie") {
             Destroy (other.gameObject);
             Destroy(gameObject);
