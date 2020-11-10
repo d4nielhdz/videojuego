@@ -14,7 +14,7 @@ public class ZombieSpawner : MonoBehaviour {
     IEnumerator ZombieSpawn () {
 
         while (true) {
-            xPos = Random.Range (15, 24);
+            xPos = Random.Range (20, 24);
             yPos = Random.Range (4, 10);
 
             Instantiate (enemy, new Vector3 (xPos, yPos, 0), Quaternion.identity);

@@ -24,7 +24,9 @@
 
      void OnTriggerEnter2D(Collider2D other) {
          Debug.Log("collision");
-        //  Destroy(other.gameObject);
+         if (other.tag == "Gunner") {
+             Destroy(other.gameObject);
+         }
      }
      
  }

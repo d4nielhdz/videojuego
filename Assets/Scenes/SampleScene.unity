@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 1807508133}
   m_Layer: 0
   m_Name: Gunner
-  m_TagString: Untagged
+  m_TagString: Gunner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -829,7 +829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807508128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.08, y: 6.06, z: 0}
+  m_LocalPosition: {x: 11.92, y: 6.15, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -849,6 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.0005
   audioData: {fileID: 1785463912}
+  bullet: {fileID: 1228298458402504109, guid: 0452a287345c74bbb843f649b3f8220d, type: 3}
 --- !u!50 &1807508133
 Rigidbody2D:
   serializedVersion: 4

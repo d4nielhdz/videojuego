@@ -6,6 +6,9 @@ public class GunnerMovement : MonoBehaviour {
     [SerializeField]
     private float speed = 0.0005f;
     public AudioSource audioData;
+    public GameObject bullet;
+    private float lastSpawned = 0f;
+
     private void Awake () {
 
     }
@@ -22,7 +25,11 @@ public class GunnerMovement : MonoBehaviour {
         float upperLimit = 9.90f;
 
         if (Input.GetKey (KeyCode.Space)) {
-            audioData.Play (0);
+            if (Time.time - lastSpawned > 0.5f) {
+                audioData.Play (0);
+                lastSpawned = Time.time;
+                Instantiate (bullet, new Vector3 (transform.position.x + 1.5f, transform.position.y + 0.1f, 0), Quaternion.identity);
+            }
         }
 
         if (yPos <= upperLimit && yPos >= lowerLimit) {
