@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7048636835153215686}
   - component: {fileID: 207618969}
   m_Layer: 0
-  m_Name: Zombie
+  m_Name: Zombie1
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1087242351
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 89011784795c44be5994568b457a7fed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Background: {fileID: 0}
+  particles: {fileID: 5408889229218084566, guid: 857de7bc31bed4c9b9851fc5eb697ff6,
+    type: 3}
 --- !u!61 &346604763144185379
 BoxCollider2D:
   m_ObjectHideFlags: 0
