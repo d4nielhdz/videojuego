@@ -40,8 +40,8 @@ public class GunnerMovement : MonoBehaviour {
             transform.Translate (new Vector2 (0, translation));
         }
     }
-// Cuando el jugador está en frente de un zombie,
-// el zombie acelera y cambia su animación
+    // Cuando el jugador está en frente de un zombie,
+    // el zombie acelera y cambia su animación
     void HandleRaycasting () {
 
         RaycastHit2D hit = Physics2D.Raycast (transform.position +
@@ -49,21 +49,9 @@ public class GunnerMovement : MonoBehaviour {
 
         if (hit && hit.collider.tag.StartsWith ("Zombie")) {
             zombieAnim = hit.transform.gameObject.GetComponent<Animator> ();
-            switch (hit.collider.tag) {
-                case "Zombie1":
-                    zombieAnim.runtimeAnimatorController =
-                        Resources.Load<RuntimeAnimatorController> ("Zombie1_Run");
-                    break;
-                case "Zombie2":
-                    zombieAnim.runtimeAnimatorController =
-                        Resources.Load<RuntimeAnimatorController> ("Zombie2_Run");
-                    break;
+            zombieAnim.runtimeAnimatorController =
+                Resources.Load<RuntimeAnimatorController> (hit.collider.tag + "_Run");
 
-                case "Zombie3":
-                    zombieAnim.runtimeAnimatorController =
-                        Resources.Load<RuntimeAnimatorController> ("Zombie3_Run");
-                    break;
-            }
             Debug.Log ("Hit zombie");
             hit.rigidbody.AddForce (-transform.right * 200f);
         }
