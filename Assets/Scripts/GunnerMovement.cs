@@ -8,6 +8,7 @@ public class GunnerMovement : MonoBehaviour {
     public AudioSource audioData;
     public GameObject bullet;
     private float lastSpawned = 0f;
+    private Animator zombieAnim;
 
     private void Awake () {
 
@@ -17,8 +18,7 @@ public class GunnerMovement : MonoBehaviour {
         // audioData = GetComponent<AudioSource> ();
     }
 
-    // Update is called once per frame
-    void Update () {
+    void HandleMovement () {
         float yPos = transform.position.y;
         float translation = Input.GetAxis ("Vertical");
         float lowerLimit = 4.07f;
@@ -39,6 +39,40 @@ public class GunnerMovement : MonoBehaviour {
         } else if (yPos <= lowerLimit && Input.GetKey (KeyCode.UpArrow)) {
             transform.Translate (new Vector2 (0, translation));
         }
+    }
+// Cuando el jugador está en frente de un zombie,
+// el zombie acelera y cambia su animación
+    void HandleRaycasting () {
+
+        RaycastHit2D hit = Physics2D.Raycast (transform.position +
+            new Vector3 (2, 0, 0), transform.TransformDirection (Vector2.right), 10f);
+
+        if (hit && hit.collider.tag.StartsWith ("Zombie")) {
+            zombieAnim = hit.transform.gameObject.GetComponent<Animator> ();
+            switch (hit.collider.tag) {
+                case "Zombie1":
+                    zombieAnim.runtimeAnimatorController =
+                        Resources.Load<RuntimeAnimatorController> ("Zombie1_Run");
+                    break;
+                case "Zombie2":
+                    zombieAnim.runtimeAnimatorController =
+                        Resources.Load<RuntimeAnimatorController> ("Zombie2_Run");
+                    break;
+
+                case "Zombie3":
+                    zombieAnim.runtimeAnimatorController =
+                        Resources.Load<RuntimeAnimatorController> ("Zombie3_Run");
+                    break;
+            }
+            Debug.Log ("Hit zombie");
+            hit.rigidbody.AddForce (-transform.right * 200f);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
+        HandleMovement ();
+        HandleRaycasting ();
     }
 
 }

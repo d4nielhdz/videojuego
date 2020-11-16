@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Zombie
   - Gunner
+  - Zombie1
+  - Zombie2
+  - Zombie3
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Higher
   - 
   - 
   - 
@@ -48,4 +51,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3685047451
+    locked: 0
+  - name: Higher
+    uniqueID: 1295890465
     locked: 0

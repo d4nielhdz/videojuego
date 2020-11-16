@@ -23,7 +23,7 @@ public class ZombieSpawner : MonoBehaviour {
 
             en = Random.Range(0, 3);
             toIn = en < 1 ? enemy1 : (en < 2 ? enemy2 : enemy3);
-            Debug.Log(en);
+            // Debug.Log(en);
             Instantiate (toIn, new Vector3 (xPos, yPos, 0), Quaternion.identity);
 
             yield return new WaitForSeconds (1);

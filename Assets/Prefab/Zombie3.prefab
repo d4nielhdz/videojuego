@@ -1,92 +1,97 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2180395883017600561
+--- !u!1001 &4975772561544022830
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4738382718421527814, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185379, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7c1eaf2b97f805041a94e27d39eae5d1, type: 2}
-    - target: {fileID: 4738382718421527815, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
-        type: 3}
-      propertyPath: m_Name
-      value: Zombie3
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.26
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185379, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.07
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.94
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.46084303
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527816, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185382, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527817, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185383, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e910e0c11aba146978da07e9041e8af0,
+      objectReference: {fileID: 21300000, guid: ff9011fc90717430ea2f480f8b8eb48f,
         type: 3}
-    - target: {fileID: 4738382718421527821, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185384, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.63
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: aaa83dffbdc54f245bc043b056364ff7, type: 2}
+    - target: {fileID: 346604763144185385, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombie2
       objectReference: {fileID: 0}
-    - target: {fileID: 4738382718421527821, guid: 91cc90c7d8483431dac7e019d8e0bd6a,
+    - target: {fileID: 346604763144185385, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.68
+      propertyPath: m_TagString
+      value: Zombie2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 91cc90c7d8483431dac7e019d8e0bd6a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 49a57ca0d67b84eb3ae8d1327b45c7f9, type: 3}

@@ -6,15 +6,16 @@
      public GameObject particles;
      private GameObject e;
      private Vector3 pos;
+     private ScrollBg scrollScript;
 
      // Use this for initialization
      void Start () {
          Background = GameObject.Find ("Background");
+         scrollScript = Background.GetComponent<ScrollBg> ();
      }
 
      // Update is called once per frame
      void Update () {
-         ScrollBg scrollScript = Background.GetComponent<ScrollBg> ();
          pos = GetComponent<Transform> ().position;
          if (scrollScript.isMoving) {
              GetComponent<Rigidbody2D> ().transform.Translate (-0.1f, 0, 0);
