@@ -45,6 +45,8 @@
             Destroy (other.gameObject);
             gameOver = GameObject.Find("GameOver");
             gameOver.GetComponent<Text>().enabled = true;
+            gameOverBg.GetComponent<RawImage>().enabled = true;
+
             gunnerScript.isAlive = false;
          }
      }

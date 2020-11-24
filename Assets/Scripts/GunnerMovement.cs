@@ -26,6 +26,7 @@ public class GunnerMovement : MonoBehaviour {
         gameOver = GameObject.Find("GameOver");
         gameOverBg = GameObject.Find("GameOverBg");
         gameOver.GetComponent<Text>().enabled = false;
+        gameOverBg.GetComponent<RawImage>().enabled = false;
 
         // audioData = GetComponent<AudioSource> ();
     }
