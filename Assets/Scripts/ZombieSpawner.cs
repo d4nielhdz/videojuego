@@ -9,15 +9,21 @@ public class ZombieSpawner : MonoBehaviour {
     private GameObject toIn;
     private int en;
     public int xPos, yPos;
+        public GameObject gunner;
+    private GunnerMovement gunnerScript;
+
 
     // Start is called before the first frame update
     void Start () {
+                gunner = GameObject.Find("Gunner");
+        gunnerScript = gunner.GetComponent<GunnerMovement> ();
         StartCoroutine (ZombieSpawn ());
+
     }
 
     IEnumerator ZombieSpawn () {
 
-        while (true) {
+        while (true && gunnerScript.isAlive) {
             xPos = Random.Range (20, 24);
             yPos = Random.Range (4, 10);
 

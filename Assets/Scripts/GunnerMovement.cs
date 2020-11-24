@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+  using UnityEngine.UI;
+
 
 public class GunnerMovement : MonoBehaviour {
     [SerializeField]
@@ -10,13 +12,18 @@ public class GunnerMovement : MonoBehaviour {
     private float lastSpawned = 0f;
     private Animator zombieAnim;
     public int score;
+    private GameObject gameOver;
+    public bool isAlive;
 
     private void Awake () {
 
     }
     // Start is called before the first frame update
     void Start () {
+        isAlive = true;
         score = 0;
+        gameOver = GameObject.Find("GameOver");
+        gameOver.GetComponent<Text>().enabled = false;
         // audioData = GetComponent<AudioSource> ();
     }
 

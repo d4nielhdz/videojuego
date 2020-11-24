@@ -1,5 +1,7 @@
 ﻿ using System.Collections;
  using UnityEngine;
+  using UnityEngine.UI;
+
 
  public class ZombieMovement : MonoBehaviour {
      public GameObject Background;
@@ -7,11 +9,18 @@
      private GameObject e;
      private Vector3 pos;
      private ScrollBg scrollScript;
+    private GameObject gameOver;
+    public GameObject gunner;
+    private GunnerMovement gunnerScript;
+
 
      // Use this for initialization
      void Start () {
          Background = GameObject.Find ("Background");
          scrollScript = Background.GetComponent<ScrollBg> ();
+                 gunner = GameObject.Find("Gunner");
+        gunnerScript = gunner.GetComponent<GunnerMovement> ();
+
      }
 
      // Update is called once per frame
@@ -30,6 +39,9 @@
              e = Instantiate (particles, new Vector3 (other.transform.position.x, other.transform.position.y, 2), Quaternion.identity);
             //  e.GetComponent<Renderer>().gi
              particles.transform.position = other.transform.position;
+            gameOver = GameObject.Find("GameOver");
+            gameOver.GetComponent<Text>().enabled = true;
+            gunnerScript.isAlive = false;
              Destroy (other.gameObject);
          }
      }
