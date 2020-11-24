@@ -9,12 +9,14 @@ public class GunnerMovement : MonoBehaviour {
     public GameObject bullet;
     private float lastSpawned = 0f;
     private Animator zombieAnim;
+    public int score;
 
     private void Awake () {
 
     }
     // Start is called before the first frame update
     void Start () {
+        score = 0;
         // audioData = GetComponent<AudioSource> ();
     }
 
