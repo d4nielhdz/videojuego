@@ -12,6 +12,8 @@
     private GameObject gameOver;
     public GameObject gunner;
     private GunnerMovement gunnerScript;
+        private GameObject gameOverBg;
+
 
 
      // Use this for initialization
@@ -20,6 +22,7 @@
          scrollScript = Background.GetComponent<ScrollBg> ();
                  gunner = GameObject.Find("Gunner");
         gunnerScript = gunner.GetComponent<GunnerMovement> ();
+        gameOverBg = GameObject.Find("GameOverBg");
 
      }
 
@@ -39,10 +42,10 @@
              e = Instantiate (particles, new Vector3 (other.transform.position.x, other.transform.position.y, 2), Quaternion.identity);
             //  e.GetComponent<Renderer>().gi
              particles.transform.position = other.transform.position;
+            Destroy (other.gameObject);
             gameOver = GameObject.Find("GameOver");
             gameOver.GetComponent<Text>().enabled = true;
             gunnerScript.isAlive = false;
-             Destroy (other.gameObject);
          }
      }
 

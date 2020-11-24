@@ -31,7 +31,7 @@ public class BulletController : MonoBehaviour {
     void OnTriggerEnter2D (Collider2D other) {
         if (other.tag.StartsWith("Zombie")) {
             gunnerScript.score += 1;
-            text.GetComponent<Text>().text = "SCORE " + gunnerScript.score.ToString();
+            text.GetComponent<Text>().text = "SCORE: " + gunnerScript.score.ToString();
             Destroy (other.gameObject);
             Destroy(gameObject);
         }

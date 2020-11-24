@@ -13,6 +13,7 @@ public class GunnerMovement : MonoBehaviour {
     private Animator zombieAnim;
     public int score;
     private GameObject gameOver;
+    private GameObject gameOverBg;
     public bool isAlive;
 
     private void Awake () {
@@ -23,7 +24,9 @@ public class GunnerMovement : MonoBehaviour {
         isAlive = true;
         score = 0;
         gameOver = GameObject.Find("GameOver");
+        gameOverBg = GameObject.Find("GameOverBg");
         gameOver.GetComponent<Text>().enabled = false;
+
         // audioData = GetComponent<AudioSource> ();
     }
 
