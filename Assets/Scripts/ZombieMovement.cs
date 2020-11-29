@@ -13,6 +13,7 @@
     public GameObject gunner;
     private GunnerMovement gunnerScript;
         private GameObject gameOverBg;
+    private GameObject quitGame;
 
 
 
@@ -44,8 +45,10 @@
              particles.transform.position = other.transform.position;
             Destroy (other.gameObject);
             gameOver = GameObject.Find("GameOver");
+            quitGame = GameObject.Find("QuitGame");
             gameOver.GetComponent<Text>().enabled = true;
             gameOverBg.GetComponent<RawImage>().enabled = true;
+            quitGame.GetComponent<Text>().enabled = true;
 
             gunnerScript.isAlive = false;
          }
